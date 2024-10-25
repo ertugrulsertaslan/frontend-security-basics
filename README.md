@@ -27,12 +27,12 @@ The **CSRF Example Application** is a React-based project designed to educate us
 
 1. Clone the repository:
  ```sh 
-  git clone https://github.com/yourusername/csrf-example.git
+  git clone https://github.com/ertugrulsertaslan/frontend-security-basics.git
 ```
 
 2. Navigate to the project directory:
  ```sh 
-  cd csrf-example
+  cd frontend-security-basics
 ```
 3.Install the dependencies:
  ```sh 
