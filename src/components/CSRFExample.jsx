@@ -50,10 +50,10 @@ function CSRFExample() {
   };
 
   return (
-    <section className="bg-black text-white p-5 w-full flex flex-col justify-center items-center">
+    <section className="w-full flex flex-col justify-center items-center">
       <h2 className="font-extrabold">CSRF Example</h2>
       <button
-        className="bg-red-500 text-white p-2 rounded"
+        className="p-2 rounded border border-black mt-5"
         onClick={simulateCSRF}
       >
         Simulate CSRF Request

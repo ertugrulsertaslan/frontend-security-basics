@@ -53,12 +53,12 @@ function XSSExample() {
   };
 
   return (
-    <section className="bg-black text-white w-full h-full mt-5 p-5 flex flex-col justify-center items-center">
+    <section className="w-full h-full mt-5 p-5 flex flex-col justify-center items-center">
       <h2 className="font-extrabold">XSS Example</h2>
       <h3>These entries are continued by the following texts:</h3>
-      <pre className="bg-red-500 p-5 mb-5 mt-5 w-full text-center">{text}</pre>
+      <pre className="p-5 mb-5 mt-5 w-full text-center">{text}</pre>
       <input
-        className="text-black p-3 w-1/2"
+        className="p-3 w-1/2 border-2 border-black"
         type="text"
         value={userInput}
         onChange={(e) => setUserInput(e.target.value)}
@@ -66,24 +66,24 @@ function XSSExample() {
       />
       <br />
       <button
-        className="w-full m-5 bg-gray-700 p-2"
+        className="mb-5 border border-black p-3"
         onClick={handleUnsafeDisplay}
       >
         Display Unsafely
       </button>
       <button
-        className="w-full m-5  bg-gray-700 p-2"
+        className="mb-5 border border-black p-3"
         onClick={handleSafeDisplay}
       >
         Display Safely with DOMPurify
       </button>
       <button
-        className="w-full m-5  bg-gray-700 p-2"
+        className="mb-5 border border-black p-2"
         onClick={handleEscapedDisplay}
       >
         Display Safely with HTML Escaping
       </button>
-      <div className="bg-gray-700 p-2">
+      <div className="p-2">
         <div
           className="w-full items-center flex justify-center"
           dangerouslySetInnerHTML={{ __html: output }}
